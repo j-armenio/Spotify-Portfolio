@@ -1,0 +1,105 @@
+.sidebar-navegation-container,
+.sidebar-navegation-container-2,
+.sidebar-links-container,
+.sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 200px;
+}
+
+.sidebar-spotify-logo {
+    height: 40px;
+    width: 131px;
+}
+
+.sidebar-navegation-container {
+    margin-top: 29px;
+}
+
+.sidebar-navegation-container-2 {
+    margin-top: 39px;
+}
+
+.navegation-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+#less-margin-nav-container {
+    margin-bottom: 7px;
+}
+
+.sidebar-navegation,
+.sidebar-links {
+    list-style: none;
+}
+
+.sidebar-navegation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 105px;
+}
+
+.sidebar-nav-text {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 16px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.navegation-icon-home {
+    color: white;
+    fill: currentColor;
+}
+
+.navegation-icon {
+    color: rgba(255, 255, 255, 0.7);
+    fill: currentColor;
+}
+
+.navegation-img {
+    height: 24px;
+    width: 24px;
+}
+
+.sidebar-link-container {
+    height: 32px;
+}
+
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+}
+
+.sidebar-links-text {
+    color: rgb(179, 179, 179);
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.sidebar-hr {
+    background-color: rgb(40, 40, 40);
+    border: none;
+    height: 1px;
+}
