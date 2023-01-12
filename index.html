@@ -53,12 +53,14 @@
             <div class="sidebar-navegation-container">
                 <ul class="sidebar-navegation">
                     <div class="nav-container">
-                        <svg class="navegation-icon-home" role="img" height="24" width="24" 
-                        aria-hidden="true" viewBox="0 0 24 24">
-                            <path d="M13.5 1.515a3 3 0 00-3 0L3 5.845a2 2 0 00-1 1.732V21a1 1 0 001 
-                            1h6a1 1 0 001-1v-6h4v6a1 1 0 001 1h6a1 1 0 001-1V7.577a2 2 0 
-                            00-1-1.732l-7.5-4.33z"></path>
-                        </svg>
+                        <a href="index.html">
+                            <svg class="navegation-icon-home" role="img" height="24" width="24" 
+                            aria-hidden="true" viewBox="0 0 24 24">
+                                <path d="M13.5 1.515a3 3 0 00-3 0L3 5.845a2 2 0 00-1 1.732V21a1 1 0 001 
+                                1h6a1 1 0 001-1v-6h4v6a1 1 0 001 1h6a1 1 0 001-1V7.577a2 2 0 
+                                00-1-1.732l-7.5-4.33z"></path>
+                            </svg>
+                        </a>
                         <li><a class="sidebar-nav-text" href="index.html">Início</a></li>
                     </div>
                     <div class="nav-container">
@@ -121,8 +123,8 @@
             <div class="footer-left-part">
                 <img class="footer-music-image" src="images/cat.jpg">
                 <div class="title-and-author-container">
-                    <span class="music-title">Cat</span>
-                    <span class="music-author">Imagine Cats</span>
+                    <span class="music-title">Special</span>
+                    <span class="music-author">Charlotte Sands</span>
                 </div>
                 <div>
                     <svg class="footer-left-svg" role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16">
@@ -229,7 +231,11 @@
                                     <span class="introduction-name">João Armênio Silveira</span>
                                 </div>
                             </div>
-                            <span class="introduction-description">Esse é meu primeiro site criado unicamente com html e css.</span>
+                            <span class="introduction-description">
+                                Esse é meu primeiro site criado unicamente com html e css. Resolvi fazer uma cópia do site do Spotify <br>
+                                para testar o que eu tenho aprendido recentemente em relação a webdev e frontend. <br>
+                                Servindo <span class="in-span1">(temporariamente)</span> como uma base para meu portifólio.
+                            </span>
                             <div class="intoduction-button-container">
                                 <button class="introduction-play-button">Play</button>
                                 <button class="introduction-follow-button">Follow</button>
@@ -243,32 +249,100 @@
                         <h2 class="main-title">Sobre mim</h2>
                     </div>
                     <div class="playlist-grid">
-                        <button class="playlist-button">
+                        <a class="playlist-link" href="index.html">
                             <img class="playlist-img" src="images/cat.jpg">
-                            <span class="playlist-text">Imagine Cats</span>
-                        </button>
-                        <button class="playlist-button">
-                            <img class="playlist-img" src="images/cat.jpg">
-                            <span class="playlist-text">Imagine Cats</span>
-                        </button>
-                        <button class="playlist-button">
-                            <img class="playlist-img" src="images/cat.jpg">
-                            <span class="playlist-text">Imagine Cats</span>
-                        </button>
-                        <button class="playlist-button">
-                            <img class="playlist-img" src="images/cat.jpg">
-                            <span class="playlist-text">Imagine Cats</span>
-                        </button>
-                        <button class="playlist-button">
-                            <img class="playlist-img" src="images/cat.jpg">
-                            <span class="playlist-text">Imagine Cats</span>
-                        </button>
+                            <span class="playlist-text">Sobre Mim</span>
+                        </a>
+                        <a class="playlist-link" href="index.html">
+                            <img id="project-icon" class="playlist-img" src="images/project.png">
+                            <span class="playlist-text">Projetos</span>
+                        </a>
+                        <a class="playlist-link" href="https://github.com/j-armenio" target="_blank">
+                            <img class="playlist-img" src="images/github.png">
+                            <span class="playlist-text">Github</span>
+                        </a>
+                        <a class="playlist-link" href="https://www.linkedin.com/in/jo%C3%A3o-arm%C3%AAnio-silveira-a3b08b256/" target="_blank">
+                            <img class="playlist-img" src="images/linkedIn.webp">
+                            <span class="playlist-text">LinkedIn</span>
+                        </a>
                     </div>
                 </section>
 
+                
                 <section>
                     <div>
-                        <h2 class="section-title">Músicas Preferidas</h2>
+                        <h2 class="section-title">Músicas Recomendadas</h2>
+                    </div>
+                    <div class="music-card-grid">
+                        <a class="music-card-link" href="index.html">
+                            <div class="music-card">
+                                <img class="music-card-img" src="images/cat.jpg">
+                                <div class="music-card-description">
+                                    <span class="music-card-name">Daily Mix 3</span>
+                                    <span class="music-card-authors">DJ TOPO, MC Teuzin PV, Anitta e mais</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="music-card-link" href="index.html"> 
+                            <div class="music-card">
+                                <img class="music-card-img" src="images/cat.jpg">
+                                <div class="music-card-description">
+                                    <span class="music-card-name">Daily Mix 3</span>
+                                    <span class="music-card-authors">DJ TOPO, MC Teuzin PV, Anitta e mais</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="music-card-link" href="index.html">
+                            <div class="music-card">
+                                <img class="music-card-img" src="images/cat.jpg">
+                                <div class="music-card-description">
+                                    <span class="music-card-name">Daily Mix 3</span>
+                                    <span class="music-card-authors">DJ TOPO, MC Teuzin PV, Anitta e mais</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="music-card-link" href="index.html">
+                            <div class="music-card">
+                                <img class="music-card-img" src="images/cat.jpg">
+                                <div class="music-card-description">
+                                    <span class="music-card-name">Daily Mix 3</span>
+                                    <span class="music-card-authors">DJ TOPO, MC Teuzin PV, Anitta e mais</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="music-card-link" href="index.html">
+                            <div class="music-card">
+                                <img class="music-card-img" src="images/cat.jpg">
+                                <div class="music-card-description">
+                                    <span class="music-card-name">Daily Mix 3</span>
+                                    <span class="music-card-authors">DJ TOPO, MC Teuzin PV, Anitta e mais</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="music-card-link" href="index.html">
+                            <div class="music-card">
+                                <img class="music-card-img" src="images/cat.jpg">
+                                <div class="music-card-description">
+                                    <span class="music-card-name">Daily Mix 3</span>
+                                    <span class="music-card-authors">DJ TOPO, MC Teuzin PV, Anitta e mais</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="music-card-link" href="index.html">
+                            <div class="music-card">
+                                <img class="music-card-img" src="images/cat.jpg">
+                                <div class="music-card-description">
+                                    <span class="music-card-name">Daily Mix 3</span>
+                                    <span class="music-card-authors">DJ TOPO, MC Teuzin PV, Anitta e mais</span>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </section>
             </div>
