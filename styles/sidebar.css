@@ -16,6 +16,7 @@
     padding-left: 24px;
     padding-right: 24px;
     width: 200px;
+    z-index: 2;
 }
 
 .sidebar-spotify-logo {
@@ -59,6 +60,16 @@
     font-weight: 700;
     text-decoration: none;
     margin-left: 16px;
+    transition: background-color 0.5s, color 0.125s;
+}
+
+.sidebar-nav-text:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#nav-text-home {
+    color: white;
 }
 
 .nav-container {
@@ -74,11 +85,18 @@
 .navegation-icon {
     color: rgba(255, 255, 255, 0.7);
     fill: currentColor;
+    transition: color 0.125s;
+}
+
+.navegation-icon:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .navegation-img {
     height: 24px;
     width: 24px;
+    cursor: pointer;
 }
 
 .sidebar-link-container {
@@ -96,6 +114,11 @@
     font-weight: 500;
     font-size: 14px;
     text-decoration: none;
+    transition: color 0.125s;
+}
+
+.sidebar-links-text:hover {
+    color: white;
 }
 
 .sidebar-hr {

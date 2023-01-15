@@ -11,6 +11,7 @@
     align-items: center;
     padding-left: 16px;
     padding-right: 24px;
+    z-index: 2;
 }
 
 .footer-left-part {
@@ -30,21 +31,48 @@
     width: 116px;
 }
 
+.music-title-container {
+    height: 19px;
+}
+
 .music-title {
     color: white;
     font-size: 14px;
     font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.music-title:hover {
+    text-decoration: underline;
+}
+
+.music-author-container {
+    height: 15px;
 }
 
 .music-author {
     color: rgb(179, 179, 179);
     font-size: 11px;
     font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.music-author:hover {
+    text-decoration: underline;
+    color: white;
 }
 
 .footer-left-svg {
     color: rgb(167, 167, 167);
     fill: currentColor;
+    cursor: pointer;
+    transition: color 0.125s;
+}
+
+.footer-left-svg:hover {
+    color: white;
 }
 
 .footer-middle-part {
@@ -69,6 +97,12 @@
 .footer-middle-svg {
     color: rgb(167, 167, 167);
     fill: currentColor;
+    cursor: pointer;
+    transition: color 0.125s;
+}
+
+.footer-middle-svg:hover {
+    color: white;
 }
 
 .play-button {
@@ -80,6 +114,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: background-color 0.125s;
+}
+
+.play-button:active {
+    background-color: rgb(161, 161, 161);
 }
 
 .middle-bottom {
@@ -111,6 +151,12 @@
 .footer-right-svg {
     color: rgb(167, 167, 167);
     fill: currentColor;
+    transition: color 0.125s;
+    cursor: pointer;
+}
+
+.footer-right-svg:hover {
+    color: white;
 }
 
 .volume-container {

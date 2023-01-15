@@ -34,14 +34,16 @@
             </div>
 
             <div>
-                <button class="profile">
-                    <img class="profile-picture" src="images/cat.jpg">
-                    <span class="profile-name">Armênio</span>
-                    <svg class="down-arrow" role="img" height="16" width="16" 
-                    aria-hidden="true" viewBox="0 0 16 16">
-                        <path d="M14 6l-6 6-6-6h12z"></path>
-                    </svg>
-                </button>
+                <a>
+                    <button class="profile">
+                        <img class="profile-picture" src="images/cat.jpg">
+                        <span class="profile-name">Armênio</span>
+                        <svg class="down-arrow" role="img" height="16" width="16" 
+                        aria-hidden="true" viewBox="0 0 16 16">
+                            <path d="M14 6l-6 6-6-6h12z"></path>
+                        </svg>
+                    </button>
+                </a>
             </div>
         </header>
 
@@ -61,7 +63,7 @@
                                 00-1-1.732l-7.5-4.33z"></path>
                             </svg>
                         </a>
-                        <li><a class="sidebar-nav-text" href="index.html">Início</a></li>
+                        <li><a id="nav-text-home" class="sidebar-nav-text" href="index.html">Início</a></li>
                     </div>
                     <div class="nav-container">
                         <svg class="navegation-icon" role="img" height="24" width="24" 
@@ -123,8 +125,12 @@
             <div class="footer-left-part">
                 <img class="footer-music-image" src="images/cat.jpg">
                 <div class="title-and-author-container">
-                    <span class="music-title">Special</span>
-                    <span class="music-author">Charlotte Sands</span>
+                    <div class="music-title-container">
+                        <a class="music-title">Special</a>
+                    </div>
+                    <div class="music-author-container">
+                        <a class="music-author">Charlotte Sands</a>
+                    </div>
                 </div>
                 <div>
                     <svg class="footer-left-svg" role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16">
@@ -252,18 +258,50 @@
                         <a class="playlist-link" href="index.html">
                             <img class="playlist-img" src="images/cat.jpg">
                             <span class="playlist-text">Sobre Mim</span>
+                            <div>
+                                <button class="playlist-play-button">
+                                    <svg class="playlist-play-button-svg" role="img" height="20" width="20" aria-hidden="true" viewBox="0 0 16 16">
+                                        <path d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 
+                                        013 14.288V1.713z"></path>
+                                    </svg>
+                                </button>
+                            </div>
                         </a>
                         <a class="playlist-link" href="index.html">
                             <img id="project-icon" class="playlist-img" src="images/project.png">
                             <span class="playlist-text">Projetos</span>
+                            <div>
+                                <button class="playlist-play-button">
+                                    <svg class="playlist-play-button-svg" role="img" height="20" width="20" aria-hidden="true" viewBox="0 0 16 16">
+                                        <path d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 
+                                        013 14.288V1.713z"></path>
+                                    </svg>
+                                </button>
+                            </div>
                         </a>
                         <a class="playlist-link" href="https://github.com/j-armenio" target="_blank">
                             <img class="playlist-img" src="images/github.png">
                             <span class="playlist-text">Github</span>
+                            <div>
+                                <button class="playlist-play-button">
+                                    <svg class="playlist-play-button-svg" role="img" height="20" width="20" aria-hidden="true" viewBox="0 0 16 16">
+                                        <path d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 
+                                        013 14.288V1.713z"></path>
+                                    </svg>
+                                </button>
+                            </div>
                         </a>
                         <a class="playlist-link" href="https://www.linkedin.com/in/jo%C3%A3o-arm%C3%AAnio-silveira-a3b08b256/" target="_blank">
                             <img class="playlist-img" src="images/linkedIn.webp">
                             <span class="playlist-text">LinkedIn</span>
+                            <div>
+                                <button class="playlist-play-button">
+                                    <svg class="playlist-play-button-svg" role="img" height="20" width="20" aria-hidden="true" viewBox="0 0 16 16">
+                                        <path d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 
+                                        013 14.288V1.713z"></path>
+                                    </svg>
+                                </button>
+                            </div>
                         </a>
                     </div>
                 </section>
@@ -276,7 +314,15 @@
                     <div class="music-card-grid">
                         <a class="music-card-link" href="index.html">
                             <div class="music-card">
-                                <img class="music-card-img" src="images/cat.jpg">
+                                <div class="music-card-img-container">
+                                    <img class="music-card-img" src="images/cat.jpg">
+                                    <button class="playlist-play-button">
+                                        <svg class="playlist-play-button-svg" role="img" height="20" width="20" aria-hidden="true" viewBox="0 0 16 16">
+                                            <path d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 
+                                            013 14.288V1.713z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
                                 <div class="music-card-description">
                                     <span class="music-card-name">Daily Mix 3</span>
                                     <span class="music-card-authors">DJ TOPO, MC Teuzin PV, Anitta e mais</span>
@@ -286,7 +332,15 @@
 
                         <a class="music-card-link" href="index.html"> 
                             <div class="music-card">
-                                <img class="music-card-img" src="images/cat.jpg">
+                                <div class="music-card-img-container">
+                                    <img class="music-card-img" src="images/cat.jpg">
+                                    <button class="playlist-play-button">
+                                        <svg class="playlist-play-button-svg" role="img" height="20" width="20" aria-hidden="true" viewBox="0 0 16 16">
+                                            <path d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 
+                                            013 14.288V1.713z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
                                 <div class="music-card-description">
                                     <span class="music-card-name">Daily Mix 3</span>
                                     <span class="music-card-authors">DJ TOPO, MC Teuzin PV, Anitta e mais</span>
@@ -296,7 +350,15 @@
 
                         <a class="music-card-link" href="index.html">
                             <div class="music-card">
-                                <img class="music-card-img" src="images/cat.jpg">
+                                <div class="music-card-img-container"> 
+                                    <img class="music-card-img" src="images/cat.jpg">
+                                    <button class="playlist-play-button">
+                                        <svg class="playlist-play-button-svg" role="img" height="20" width="20" aria-hidden="true" viewBox="0 0 16 16">
+                                            <path d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 
+                                            013 14.288V1.713z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
                                 <div class="music-card-description">
                                     <span class="music-card-name">Daily Mix 3</span>
                                     <span class="music-card-authors">DJ TOPO, MC Teuzin PV, Anitta e mais</span>
@@ -306,7 +368,15 @@
 
                         <a class="music-card-link" href="index.html">
                             <div class="music-card">
-                                <img class="music-card-img" src="images/cat.jpg">
+                                <div class="music-card-img-container">
+                                    <img class="music-card-img" src="images/cat.jpg">
+                                    <button class="playlist-play-button">
+                                        <svg class="playlist-play-button-svg" role="img" height="20" width="20" aria-hidden="true" viewBox="0 0 16 16">
+                                            <path d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 
+                                            013 14.288V1.713z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
                                 <div class="music-card-description">
                                     <span class="music-card-name">Daily Mix 3</span>
                                     <span class="music-card-authors">DJ TOPO, MC Teuzin PV, Anitta e mais</span>
@@ -316,7 +386,15 @@
 
                         <a class="music-card-link" href="index.html">
                             <div class="music-card">
-                                <img class="music-card-img" src="images/cat.jpg">
+                                <div class="music-card-img-container">
+                                    <img class="music-card-img" src="images/cat.jpg">
+                                    <button class="playlist-play-button">
+                                        <svg class="playlist-play-button-svg" role="img" height="20" width="20" aria-hidden="true" viewBox="0 0 16 16">
+                                            <path d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 
+                                            013 14.288V1.713z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
                                 <div class="music-card-description">
                                     <span class="music-card-name">Daily Mix 3</span>
                                     <span class="music-card-authors">DJ TOPO, MC Teuzin PV, Anitta e mais</span>
@@ -326,7 +404,15 @@
 
                         <a class="music-card-link" href="index.html">
                             <div class="music-card">
-                                <img class="music-card-img" src="images/cat.jpg">
+                                <div class="music-card-img-container">
+                                    <img class="music-card-img" src="images/cat.jpg">
+                                    <button class="playlist-play-button">
+                                        <svg class="playlist-play-button-svg" role="img" height="20" width="20" aria-hidden="true" viewBox="0 0 16 16">
+                                            <path d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 
+                                            013 14.288V1.713z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
                                 <div class="music-card-description">
                                     <span class="music-card-name">Daily Mix 3</span>
                                     <span class="music-card-authors">DJ TOPO, MC Teuzin PV, Anitta e mais</span>
@@ -336,7 +422,15 @@
 
                         <a class="music-card-link" href="index.html">
                             <div class="music-card">
-                                <img class="music-card-img" src="images/cat.jpg">
+                                <div class="music-card-img-container">
+                                    <img class="music-card-img" src="images/cat.jpg">
+                                    <button class="playlist-play-button">
+                                        <svg class="playlist-play-button-svg" role="img" height="20" width="20" aria-hidden="true" viewBox="0 0 16 16">
+                                            <path d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 
+                                            013 14.288V1.713z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
                                 <div class="music-card-description">
                                     <span class="music-card-name">Daily Mix 3</span>
                                     <span class="music-card-authors">DJ TOPO, MC Teuzin PV, Anitta e mais</span>

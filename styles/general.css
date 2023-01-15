@@ -41,7 +41,7 @@ body {
     padding-right: 45px;
 }
 
-ul {
+ul, p {
     padding: 0;
     margin: 0;
 }
