@@ -1,0 +1,107 @@
+/* 
+    Black 900
+    ExtraBold 800
+    Bold 700
+    SemiBold 600
+    Medium 500
+    Regular 300
+    Light 100
+*/
+
+/* Black 900 */
+@font-face {
+    font-family: 'Rubik';
+    src: url('../assets/fonts/Rubik-Black.ttf');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url('../assets/fonts/Rubik-BlackItalic.ttf');
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* ExtraBold 800 */
+@font-face {
+    font-family: 'Rubik';
+    src: url('../assets/fonts/Rubik-ExtraBold.ttf');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url('../assets/fonts/Rubik-ExtraBoldItalic.ttf');
+    font-weight: 800;
+    font-style: italic;
+}
+
+/* Bold 700 */
+@font-face {
+    font-family: 'Rubik';
+    src: url('../assets/fonts/Rubik-Bold.ttf');
+    font-weight: 700, bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url('../assets/fonts/Rubik-BoldItalic.ttf');
+    font-weight: 700, bold;
+    font-style: italic;
+}
+
+/* SemiBold 600 */
+@font-face {
+    font-family: 'Rubik';
+    src: url('../assets/fonts/Rubik-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url('../assets/fonts/Rubik-SemiBoldItalic.ttf');
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Medium 500 */
+@font-face {
+    font-family: 'Rubik';
+    src: url('../assets/fonts/Rubik-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url('../assets/fonts/Rubik-MediumItalic.ttf');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Regular 300 */
+@font-face {
+    font-family: 'Rubik';
+    src: url('../assets/fonts/Rubik-Regular.ttf');
+    font-weight: 300, normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url('../assets/fonts/Rubik-Italic.ttf');
+    font-weight: 300, normal;
+    font-style: normal;
+}
+
+/* Light 100 */
+@font-face {
+    font-family: 'Rubik';
+    src: url('../assets/fonts/Rubik-Light.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url('../assets/fonts/Rubik-LightItalic.ttf');
+    font-weight: 100;
+    font-style: italic;
+}
