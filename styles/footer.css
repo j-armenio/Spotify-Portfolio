@@ -1,12 +1,26 @@
 @import './general.css';
 
 #footer {
-    background-color:var(--main-black);
-    height: 9vh;
+    background-color:var(--kinda-black);
+    height: 10vh;
     z-index: 3
 }
 
 #current-music-img {
     object-fit: cover;
     height: 65%;
+}
+
+#music-name {
+    font-size: 80%;
+}
+
+#music-author {
+    font-size: 80%;
+    color: var(--kinda-grey);
+}
+
+.music-time {
+    color: var(--kinda-grey);
+    font-size: 80%;
 }
