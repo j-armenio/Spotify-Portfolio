@@ -1,3 +1,12 @@
+@import './general.css';
+
 #footer {
-    height: 15vh; /* 15% da altura da tela */
+    background-color:var(--main-black);
+    height: 9vh;
+    z-index: 3
+}
+
+#current-music-img {
+    object-fit: cover;
+    height: 65%;
 }

@@ -88,8 +88,8 @@
 @font-face {
     font-family: 'Rubik';
     src: url('../assets/fonts/Rubik-Italic.ttf');
-    font-weight: 300, normal;
-    font-style: normal;
+    font-weight: 300, italic;
+    font-style: italic;
 }
 
 /* Light 100 */

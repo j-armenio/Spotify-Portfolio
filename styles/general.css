@@ -1,16 +1,17 @@
 @import './rubikFont.css';
 @import './body.css';
 @import './footer.css';
+@import './sidebar.css';
 
 :root {
-    
+    --main-black: #121212;
 }
 
-* {
+*, .row, .padding {
     margin: 0;
     padding: 0;
 }
 
 body {
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
 }
