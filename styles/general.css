@@ -4,8 +4,12 @@
 @import './sidebar.css';
 
 :root {
-    --kinda-black: #121212;
-    --kinda-grey: #b3b3b3;
+    --background-base: #121212;
+    --background-press: #000;
+    --text-base: #fff;
+    --text-subdue: #b3b3b3;
+    --essential-base: #fff;
+    --essential-subdue: #b3b3b3;
 }
 
 *, .row, .padding {
@@ -18,11 +22,11 @@ body {
 }
 
 .icon {
-    color: var(--kinda-grey);
+    color: var(--essential-subdue);
 }
 
 .icon:hover {
     cursor: pointer;
-    color: white;
+    color: var(--essential-base);
     transition: 0.3s;
 }

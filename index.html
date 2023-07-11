@@ -18,13 +18,11 @@
     <footer id="footer" class="fixed-bottom row text-white">
       <div class="container row d-flex justify-content-center align-content-center">
         <div class="col-3">
-          <div class="d-flex h-100 justify-content-start align-items-center">
+          <div class="d-flex h-100 w-100 justify-content-start align-items-center overflow-hidden text-nowrap">
             <img id="current-music-img" src="assets/images/ab67616d0000485105e9e12f1b2241e8470f0e2c.jpeg" class="rounded-2">
-            <div class="d-none d-sm-block">
-              <div class="ps-3 d-flex flex-column justify-content-center align-items-start">
-                <span id="music-name">Nome da Música</span>
-                <span id="music-author">Autor da Música</span>
-              </div>
+            <div class="d-none d-sm-flex w-100 ps-3 flex-column justify-content-center align-items-start">            
+              <span id="music-name">Nome da Música</span>
+              <span id="music-author">Autor da Música</span>
             </div>
           </div>
         </div>
@@ -37,10 +35,10 @@
             <div id="play-pause-button"><i class="icon px-3 fs-2 text-white bi bi-play-circle-fill"></i></div>
             <div id="next-button"><i class="icon fs-4 bi bi-fast-forward-fill"></i></div>
           </div>
-          <div class="d-none d-sm-block">
-            <div class="d-flex align-items-center justify-content-center">
+          <div class="d-none d-sm-flex align-itens-center justify-content-center">
+            <div class="d-flex align-items-center justify-content-center w-100">
               <span id="current-time" class="music-time">00:00</span>
-              <div class="d-none d-sm-block">
+              <div class="d-none d-sm-block px-2" style="width: 60%;">
                 <div id="progress-bar">
                   <div id="progress"></div>
                 </div>

@@ -1,7 +1,7 @@
 @import './general.css';
 
 #footer {
-    background-color:var(--kinda-black);
+    background-color:var(--background-press);
     height: 10vh;
     z-index: 3
 }
@@ -13,14 +13,32 @@
 
 #music-name {
     font-size: 80%;
+    width: 100%;
+    color: var(--text-base);
 }
 
 #music-author {
     font-size: 80%;
-    color: var(--kinda-grey);
+    width: 100%;
+    color: var(--text-subdue);
 }
 
 .music-time {
-    color: var(--kinda-grey);
+    color: var(--text-subdue);
     font-size: 80%;
+}
+
+#progress-bar {
+    height: 4px;
+    width: 100%;
+    background-color: var(--essential-subdue);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#progress {
+    height: 100%;
+    width: 10%;
+    background-color: var(--essential-base);
+    border-radius: 5px;
 }
