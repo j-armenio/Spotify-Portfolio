@@ -2,13 +2,12 @@
 
 #footer {
     background-color:var(--background-press);
-    height: 10vh;
     z-index: 3
 }
 
-#current-music-img {
+#song-cover {
     object-fit: cover;
-    height: 65%;
+    height: 100%;
 }
 
 #music-name {
@@ -38,7 +37,74 @@
 
 #progress {
     height: 100%;
-    width: 10%;
+    width: 0%;
     background-color: var(--essential-base);
     border-radius: 5px;
+    position: relative;
+}
+
+#progress-bar:hover #progress {
+    background-color: var(--essential-positive);
+}
+
+#progress-bar:hover #progress::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--essential-base);
+}
+
+#play-pause-button i{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+#play-pause-button:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+#lyrics-button i{
+    font-size: 1.3rem;    
+}
+
+#volume-button i{
+    font-size: 1.3rem;
+}
+
+#volume-bar {
+    height: 4px;
+    width: 100%;
+    background-color: var(--essential-subdue);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#volume {
+    height: 100%;
+    width: 100%;
+    background-color: var(--essential-base);
+    border-radius: 5px;
+    position: relative;
+}
+
+#volume-bar:hover #volume {
+    background-color: var(--essential-positive);
+}
+
+#volume-bar:hover #volume::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--essential-base);
 }

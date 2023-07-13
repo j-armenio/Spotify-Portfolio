@@ -7,10 +7,13 @@
     --background-base: #121212;
     --background-press: #000;
     --text-base: #fff;
-    --text-subdue: #b3b3b3;
+    --text-subdue: #a7a7a7;
     --essential-base: #fff;
-    --essential-subdue: #b3b3b3;
+    --essential-subdue: #727272;
+    --essential-positive: #1ed760;
 }
+
+
 
 *, .row, .padding {
     margin: 0;
@@ -19,10 +22,11 @@
 
 body {
     font-family: 'Rubik', sans-serif;
+    background-color: grey;
 }
 
 .icon {
-    color: var(--essential-subdue);
+    color: var(--text-subdue);
 }
 
 .icon:hover {
