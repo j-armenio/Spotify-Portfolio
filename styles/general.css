@@ -2,6 +2,7 @@
 @import './body.css';
 @import './footer.css';
 @import './sidebar.css';
+@import './main.css';
 
 :root {
     --background-base: #121212;
@@ -12,8 +13,6 @@
     --essential-subdue: #727272;
     --essential-positive: #1ed760;
 }
-
-
 
 *, .row, .padding {
     margin: 0;
