@@ -19,9 +19,11 @@
     padding: 0;
 }
 
-body {
+body, html {
     font-family: 'Rubik', sans-serif;
-    background-color: grey;
+    background-color: var(--background-press);
+    height: 100%;
+    user-select: none;
 }
 
 .icon {

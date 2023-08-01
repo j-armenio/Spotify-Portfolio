@@ -3,7 +3,7 @@
 #footer {
     background-color:var(--background-press);
     z-index: 3;
-    height: 7.2rem;
+    height: 7rem;
 }
 
 #song-cover {

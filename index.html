@@ -13,70 +13,82 @@
 </head>
 
 <body>
-  <div>
-    <div style="height: 1000px;"></div>
-    <div id="lyrics-box">
-      <p></p>
-      
-    </div>
-
-    <div>
-      <nav id="sidebar"></nav>
-      <div id="divider"></div>
-      <main id="main"></main>
-    </div>
-
-    <footer id="footer" class="fixed-bottom row text-white">
-      <div class="container row p-0 d-flex justify-content-center align-content-center p-3">
-        <div class="col-3 p-0">
-          <div class="d-flex h-100 w-100 justify-content-start align-items-center">
-            <img id="song-cover" src="assets/images/are_you_impressed.jpeg" class="rounded-2">
-            <div class="d-none d-sm-flex w-100 ps-3 flex-column justify-content-center align-items-start overflow-hidden text-nowrap">            
-              <span id="music-name">Nome da Música</span>
-              <span id="music-author">Autor da Música</span>
-            </div>
-          </div>
+  <main id="main-cover" class="d-flex">
+    <nav id="sidebar" class="d-none d-sm-flex flex-column">
+      <div id="resizer"></div>
+      <div id="sidebar-header" class="rounded m-2 px-4 py-3">
+        <div class="d-flex align-items-center mb-3 sidebar-header-hover">
+          <i class="bi bi-house-door fs-4 me-3"></i>
+          <span class="fs-6 fw-semibold">Início</span>
         </div>
-
-        <audio id="player" src=""></audio>
-
-        <div id="center-container" class="col-6 h-100 d-flex flex-column align-itens-center justify-content-center">
-          <div class="controls mb-1 d-flex flex-row align-items-center justify-content-center">
-            <div id="prev-button"><i class="icon fs-4 bi bi-rewind-fill"></i></div>
-            <div class="mx-4">
-              <div id="play-pause-button"><i class="bi bi-play-circle-fill"></i></div>
-            </div>
-            <div id="next-button"><i class="icon fs-4 bi bi-fast-forward-fill"></i></div>
-          </div>
-          <div class="d-none d-sm-flex align-itens-center justify-content-center">
-            <div class="d-flex align-items-center justify-content-center w-100">
-              <span id="current-time" class="music-time">00:00</span>
-              <div class="d-none d-sm-block px-2" style="width: 60%;">
-                <div id="progress-bar">
-                  <div id="progress"></div>
-                </div>
-              </div>
-              <span id="duration" class="music-time">00:00</span>
-            </div>
-          </div>
+        <div class="d-flex align-items-center sidebar-header-hover">
+          <i class="bi bi-spotify fs-4 me-3"></i>
+          <span class="fs-6 fw-semibold">Meu Spotify</span>
         </div>
+      </div>
+      <div id="sidebar-songs" class="flex-grow-1 rounded m-2 mt-0 mb-0 px-4 py-3">
+        <div class="d-inline sidebar-header-hover">
+          <i class="bi bi-collection-fill fs-4 me-3"></i>
+          <span class="fs-6 fw-semibold">Minha Biblioteca</span>
+        </div>
+      </div>
+    </nav>
+    <div id="main-content" class="flex-grow-1 m-2 ms-2 ms-sm-0 mb-0 rounded">
+      <h1>Main Content Here</h1>
+    </div>
+  </main>
 
-        <div class="col-3 p-0 d-flex justify-content-center justify-content-sm-end align-items-center">
-          <div id="lyrics-button" class="d-sm-block"><i class="icon bi bi-music-note"></i></div>
-          <div id="volume-button" class="d-none d-sm-block ms-2"><i class="icon bi bi-volume-up"></i></div>
-          <div class="d-none d-sm-block ms-2" style="width: 20%;">
-            <div id="volume-bar">
-              <div id="volume"></div>
-            </div>
+  <footer id="footer" class="fixed-bottom row text-white">
+    <div class="container row p-0 d-flex justify-content-center align-content-center p-3">
+      <div class="col-3 p-0">
+        <div class="d-flex h-100 w-100 justify-content-start align-items-center">
+          <img id="song-cover" src="assets/images/are_you_impressed.jpeg" class="rounded-2">
+          <div class="d-none d-sm-flex w-100 ps-3 flex-column justify-content-center align-items-start overflow-hidden text-nowrap">            
+            <span id="music-name">Nome da Música</span>
+            <span id="music-author">Autor da Música</span>
           </div>
         </div>
       </div>
-    </footer>
-  </div>
+
+      <audio id="player" src=""></audio>
+
+      <div id="center-container" class="col-6 h-100 d-flex flex-column align-itens-center justify-content-center">
+        <div class="controls mb-1 d-flex flex-row align-items-center justify-content-center">
+          <div id="prev-button"><i class="icon fs-4 bi bi-rewind-fill"></i></div>
+          <div class="mx-4">
+            <div id="play-pause-button"><i class="bi bi-play-circle-fill"></i></div>
+          </div>
+          <div id="next-button"><i class="icon fs-4 bi bi-fast-forward-fill"></i></div>
+        </div>
+        <div class="d-none d-sm-flex align-itens-center justify-content-center">
+          <div class="d-flex align-items-center justify-content-center w-100">
+            <span id="current-time" class="music-time">00:00</span>
+            <div class="d-none d-sm-block px-2" style="width: 60%;">
+              <div id="progress-bar">
+                <div id="progress"></div>
+              </div>
+            </div>
+            <span id="duration" class="music-time">00:00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3 p-0 d-flex justify-content-center justify-content-sm-end align-items-center">
+        <div id="lyrics-button" class="d-sm-block"><i class="icon bi bi-music-note"></i></div>
+        <div id="volume-button" class="d-none d-sm-block ms-2"><i class="icon bi bi-volume-up"></i></div>
+        <div class="d-none d-sm-block ms-2" style="width: 20%;">
+          <div id="volume-bar">
+            <div id="volume"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script type="module" src="./scripts/musicPlayer.js"></script>
   <script type="module" src="./scripts/volume.js"></script>
+  <script type="module" src="./scripts/resizer.js"></script>
 </body>
 
 </html>

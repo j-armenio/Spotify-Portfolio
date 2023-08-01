@@ -1,5 +1,5 @@
 @import './general.css';
 
-#main {
-
+#main-content {
+    background-color: var(--background-base);
 }
