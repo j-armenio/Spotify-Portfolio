@@ -22,7 +22,7 @@ function initResizerFn( resizer, sidebar )
 
         let cw = w + dx; // complete width
         
-        if ( cw <= 1000 ) {
+        if ( cw <= 800 && cw >= 250 )  {
             sidebar.style.width = `${ cw }px`;
         }
    }
