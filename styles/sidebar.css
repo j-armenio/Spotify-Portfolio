@@ -35,3 +35,17 @@
 #sidebar-songs {
     background-color: var(--background-base);
 }
+
+.sb-card:hover {
+    background-color: var(--essential-subdue);
+}
+
+.sb-song-name {
+    color: var(--essential-base);
+    font-size: 15px;
+}
+
+.sb-song-author {
+    color: var(--text-subdue);
+    font-size: 13px;
+}
