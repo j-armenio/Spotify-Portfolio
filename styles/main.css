@@ -3,3 +3,30 @@
 #main-content {
     background-color: var(--background-base);
 }
+
+#header-img-container {
+    background-color: rgba(18, 18, 18, 0.8);
+    transition: transform 0.0125s;
+}
+
+#header-img-container:hover {
+    background-color: var(--background-base);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#header-img {
+    height: 1.75rem;
+}
+
+.navegation-arrow {
+    color: var(--essential-base);
+    background-color: var(--background-base);
+    cursor: pointer;
+}
+
+#main-message {
+    color: var(--text-base);
+    font-size: 1.8rem;
+    font-weight: 600;
+}

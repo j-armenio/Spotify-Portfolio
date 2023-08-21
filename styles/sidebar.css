@@ -37,7 +37,7 @@
 }
 
 .sb-card:hover {
-    background-color: var(--essential-subdue);
+    background-color: rgba(167, 167, 167, 0.1);
 }
 
 .sb-song-name {
