@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <section id="main-cover" class="d-flex">
+  <section id="main-cover" class="d-flex overflow-hidden">
     <nav id="sidebar" class="d-none d-sm-flex flex-column">
       <div id="resizer"></div>
       <div id="sidebar-header" class="rounded m-2 px-4 py-3">
@@ -26,7 +26,7 @@
           <span class="fs-6 fw-semibold">Meu Spotify</span>
         </div>
       </div>
-      <div id="sidebar-songs" class="flex-grow-1 rounded m-2 mt-0 mb-0 pt-3 text-nowrap overflow-hidden text-truncate">
+      <div id="sidebar-songs" class="flex-grow-1 rounded m-2 mt-0 mb-0 pt-3 text-nowrap overflow-scroll text-truncate">
 
         <div class="d-flex align-items-center sidebar-header-hover px-4">
           <i class="bi bi-collection-fill fs-4 me-3"></i>
@@ -42,13 +42,12 @@
               <span class="sb-song-author">Autor da Música</span>
             </div>
           </div>
-
         </div>
         
       </div>
     </nav>
-    <main id="main-content" class="flex-grow-1 m-2 ms-2 ms-sm-0 mb-0 rounded">
-      <header class="bg-success rounded-top py-3 px-4 d-flex justify-content-between">
+    <main id="main-content" class="flex-grow-1 m-2 ms-2 ms-sm-0 mb-0 rounded overflow-scroll position-relative">
+      <header id="main-header" class="bg-success rounded-top py-3 px-4 d-flex justify-content-between position-absolute">
         <div class="d-flex gap-2">
           <i class="bi bi-arrow-left-short navegation-arrow d-flex align-items-center rounded-5 p-1 fs-3"></i>
           <i class="bi bi-arrow-right-short navegation-arrow d-flex align-items-center rounded-5 p-1 fs-3"></i>
@@ -61,10 +60,28 @@
       </header>
 
       <div class=" pt-1 py-3 px-4">
-        <div id="main-message" class="">
-          Bom dia.
+        <div id="time-of-day-message" class="">
+          Bom dia
         </div>
         <h1>Main Content Here</h1>
+        <div style="height: 2000px" class="fs-1">
+          PLACEHOLDER<br>
+          PLACEHOLDER<br>
+          PLACEHOLDER<br>
+          PLACEHOLDER<br>
+          PLACEHOLDER<br>
+          PLACEHOLDER<br>
+          PLACEHOLDER<br>
+          PLACEHOLDER<br>
+          PLACEHOLDER<br>
+          PLACEHOLDER<br>
+          PLACEHOLDER<br>
+          PLACEHOLDER<br>
+          PLACEHOLDER<br>
+          PLACEHOLDER<br>
+          PLACEHOLDER<br>
+          PLACEHOLDER<br>
+        </div>
       </div>
     </main>
   </section>

@@ -4,6 +4,10 @@
     background-color: var(--background-base);
 }
 
+#main-header {
+    
+}
+
 #header-img-container {
     background-color: rgba(18, 18, 18, 0.8);
     transition: transform 0.0125s;
@@ -25,7 +29,7 @@
     cursor: pointer;
 }
 
-#main-message {
+#time-of-day-message {
     color: var(--text-base);
     font-size: 1.8rem;
     font-weight: 600;
