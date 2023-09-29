@@ -81,6 +81,5 @@ const prevNextMusic = (type) => {
 }
 
 
-
 prevNextMusic("innit")
 player.addEventListener("timeupdate", () => updateTime())
