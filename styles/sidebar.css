@@ -36,6 +36,14 @@
     background-color: var(--background-base);
 }
 
+.sidebar-songs-cover {
+    padding: 0 0.5rem;
+}
+
+.sb-card {
+    cursor: pointer;
+}
+
 .sb-card:hover {
     background-color: rgba(167, 167, 167, 0.1);
 }
@@ -48,8 +56,4 @@
 .sb-song-author {
     color: var(--text-subdue);
     font-size: 13px;
-}
-
-.sb-img {
-    
 }
