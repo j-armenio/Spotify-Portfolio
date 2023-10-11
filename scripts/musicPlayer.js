@@ -72,7 +72,6 @@ const prevNextMusic = (type) => {
     musicName.innerHTML = songs[currentSong].name
     author.innerHTML = songs[currentSong].author
     songCover.src = songs[currentSong].songCover
-    
 
     if (type !== "innit")
         playPauseMusic("play")
@@ -80,5 +79,26 @@ const prevNextMusic = (type) => {
     updateTime()
 }
 
+const playSong = (song) => {
+    player.src = song.src
+    musicName.innerHTML = song.name
+    author.innerHTML = song.author
+    songCover.src = song.songCover
+
+    playPauseMusic("play")
+
+    updateTime()
+
+    // update currentSong variable
+    for (let i = 0; i < songs.length; i++) {
+        if (songs[i].src === song.src) {
+            currentSong = i
+            break
+        }
+    }
+}
+
 prevNextMusic("innit")
 player.addEventListener("timeupdate", () => updateTime())
+
+export { playSong }
