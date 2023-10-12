@@ -33,6 +33,18 @@
 
 #time-of-day-message {
     color: var(--text-base);
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 600;
+}
+
+#profile-container {
+    background-color: red;
+}
+
+#profile-container > * {
+    color: var(--text-base);
+}
+
+#profile-img {
+    height: 15rem;
 }
