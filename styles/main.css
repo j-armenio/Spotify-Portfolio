@@ -1,17 +1,19 @@
 @import './general.css';
 
 #main-content {
-    background-color: var(--background-base);
+    background: var(--gradient-background);
+    background-attachment: local;
 }
 
 #main-header {
     top: 0;
     left: 0;
     width: 100%;
+    background: var(--gradient-background);
 }
 
 #header-img-container {
-    background-color: rgba(18, 18, 18, 0.8);
+    background-color: var(--header-img-container-color);
     transition: transform 0.0125s;
 }
 
@@ -37,14 +39,81 @@
     font-weight: 600;
 }
 
-#profile-container {
-    background-color: red;
+#profile-container-desktop {
+    background: var(--profile-container-background-desktop);
+    margin: 1rem 6rem;
 }
 
-#profile-container > * {
+#profile-container-mobile {
+    background: var(--profile-container-background-mobile);
+}
+
+#profile-container-desktop, #profile-container-mobile > * {
     color: var(--text-base);
 }
 
 #profile-img {
     height: 15rem;
+}
+
+#profile-job {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#profile-name {
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+#profile-name:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#profile-name-mobile {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+#profile-text {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#section-title {
+    color: var(--essential-base);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#infocard {
+    background-color: var(--infocard-background);
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+#infocard:hover {
+    background-color: var(--infocard-hover);
+}
+
+#infocard-img {
+    max-height: 5rem;
+}
+
+#infocard-text {
+    color: var(--text-base);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#infocard-subtext {
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: var(--text-subdue);
+}
+
+#infocard-btn {
+    color: var(--essential-positive);
+    
 }

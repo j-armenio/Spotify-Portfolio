@@ -5,8 +5,6 @@ const sidebarSongsCover = document.querySelector(".sidebar-songs-cover")
 
 const createSongCard = () => {
     for (const song of songs) {
-        console.log(song)
-
         const cardDiv = document.createElement("div")
         cardDiv.classList.add('sb-card', 'd-flex', 'align-items-center', 'rounded-2', 'p-2')
 

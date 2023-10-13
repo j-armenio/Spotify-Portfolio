@@ -12,6 +12,13 @@
     --essential-base: #fff;
     --essential-subdue: #727272;
     --essential-positive: #1ed760;
+
+    --gradient-background: linear-gradient(to bottom, var(--essential-subdue) 0%, var(--background-base) 15rem , var(--background-base) 100%);
+    --header-img-container-color: rgba(18, 18, 18, 0.8);
+    --profile-container-background-desktop: linear-gradient(40deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    --profile-container-background-mobile: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    --infocard-background: rgba(200, 200, 200, 0.1);
+    --infocard-hover: rgba(223, 223, 223, 0.2);
 }
 
 *, .row, .padding {

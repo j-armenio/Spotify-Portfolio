@@ -22,6 +22,10 @@
     cursor: col-resize;
 }
 
+#resizer:hover {
+    border-left: 1px solid var(--essential-subdue);
+}
+
 .sidebar-header-hover {
     color: var(--text-subdue);
 }

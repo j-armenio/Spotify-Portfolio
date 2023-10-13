@@ -22,7 +22,7 @@ function initResizerFn( resizer, sidebar )
       let dx = e.clientX - mousePos
       let cw = w + dx; // complete width
 
-      if ( cw <= 800 && cw >= 250 ) {
+      if ( cw <= 1000 && cw >= 250 ) {
          sidebar.style.width = `${ cw }px`
       }
    }
