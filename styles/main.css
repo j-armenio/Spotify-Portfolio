@@ -35,7 +35,6 @@
 
 #time-of-day-message {
     color: var(--text-base);
-    font-size: 2rem;
     font-weight: 600;
 }
 
@@ -103,13 +102,25 @@
 }
 
 #infocard-img {
-    max-height: 5rem;
+    max-height: 4rem;
+}
+
+@media (min-width: 576px) {
+    #infocard-img {
+        max-height: 5rem;
+    }
 }
 
 #infocard-text {
     color: var(--text-base);
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 576px) {
+    #infocard-text {
+        font-size: 1rem;
+    }
 }
 
 #infocard-subtext {
