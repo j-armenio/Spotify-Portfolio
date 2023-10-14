@@ -28,7 +28,7 @@ volumeBar.addEventListener("click", (e) => {
 })
 
 const updateVolume = () => {
-    if (currentVolume === 0 || currentVolume <= 0.1) {
+    if (currentVolume === 0 || currentVolume <= 0.05) {
         volumeButton.innerHTML = volumeOff
         currentVolume = 0
     }
