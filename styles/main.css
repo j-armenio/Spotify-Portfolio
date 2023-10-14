@@ -28,9 +28,9 @@
 }
 
 .navegation-arrow {
-    color: var(--essential-base);
+    color: var(--text-subdue);
     background-color: var(--background-base);
-    cursor: pointer;
+    cursor: not-allowed;
 }
 
 #time-of-day-message {
@@ -87,8 +87,19 @@
 
 #section-title {
     color: var(--essential-base);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
+}
+
+@media (min-width: 576px) {
+    #section-title {
+        font-size: 2rem;
+    }
+}
+
+#section-title:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 #infocard {
@@ -129,7 +140,13 @@
     color: var(--text-subdue);
 }
 
-#infocard-btn {
+#infocard #infocard-button {
     color: var(--essential-positive);
-    
+    font-size: 3rem;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+#infocard:hover #infocard-button {
+    opacity: 1;
 }
