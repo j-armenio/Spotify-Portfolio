@@ -1,9 +1,5 @@
 @import './general.css';
 
-#main-cover {
-    height: calc(100vh - 7rem);
-}
-
 #sidebar-header {
     background-color: var(--background-base);
 }
@@ -34,6 +30,10 @@
     color: var(--essential-base);
     cursor: pointer;
     transition: 0.3s;
+}
+
+#my-library-container {
+    border-bottom: 1px solid var(--infocard-hover);
 }
 
 #sidebar-songs {

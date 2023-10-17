@@ -1,5 +1,15 @@
 @import './general.css';
 
+#main-cover {
+    height: 100vh
+}
+
+@media (min-width: 768px) {
+    #main-cover {
+        height: calc(100vh - 7rem);
+    }
+}
+
 #main-content {
     background: var(--gradient-background);
     background-attachment: local;
@@ -145,6 +155,8 @@
     font-size: 3rem;
     opacity: 0;
     transition: opacity 0.25s;
+    z-index: 2;
+    right:  5%;
 }
 
 #infocard:hover #infocard-button {

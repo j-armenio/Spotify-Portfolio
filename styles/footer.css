@@ -3,7 +3,16 @@
 #footer {
     background-color:var(--background-press);
     z-index: 3;
-    height: 7rem;
+    height: 6rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    #footer {
+        height: 7rem;
+    }
 }
 
 #song-cover {
@@ -32,6 +41,16 @@
 .music-time {
     color: var(--text-subdue);
     font-size: 80%;
+}
+
+#progress-bar-container {
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    #infocard-text {
+        width: 60%;
+    }
 }
 
 #progress-bar {
@@ -67,8 +86,14 @@
 }
 
 #play-pause-button i{
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     cursor: pointer;
+}
+
+@media (min-width: 576px) {
+    #play-pause-button i{
+        font-size: 2.7rem;
+    }
 }
 
 #play-pause-button:hover {
@@ -76,8 +101,24 @@
     transition: 0.1s;
 }
 
-#lyrics-button i{
-    font-size: 1.3rem;    
+#prev-button, #next-button {
+    font-size: 1.1rem;
+}
+
+@media (min-width: 576px) {
+    #prev-button, #next-button {
+        font-size: 1.5rem;
+    }
+}
+
+#shuffle-button, #repeat-button {
+    font-size: 1rem;
+}
+
+@media (min-width: 576px) {
+    #shuffle-button, #repeat-button {
+        font-size: 1.2rem;
+    }
 }
 
 #volume-button i{
