@@ -48,7 +48,7 @@
 }
 
 @media (min-width: 576px) {
-    #infocard-text {
+    #progress-bar-container {
         width: 60%;
     }
 }
@@ -113,12 +113,22 @@
 
 #shuffle-button, #repeat-button {
     font-size: 1rem;
+    color: var(--text-subdue);
+}
+
+#shuffle-button:hover, #repeat-button:hover {
+    cursor: pointer;
+    color: var(--essential-base);
 }
 
 @media (min-width: 576px) {
     #shuffle-button, #repeat-button {
         font-size: 1.2rem;
     }
+}
+
+#shuffle-button-icon, #repeat-button-icon {
+    position: relative;
 }
 
 #volume-button i{
@@ -155,4 +165,20 @@
     height: 10px;
     border-radius: 50%;
     background-color: var(--essential-base);
+}
+
+.btn-active {
+    color: var(--essential-positive);
+}
+
+.btn-active::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    background-color: var(--essential-positive);
+    border-radius: 50%;
 }

@@ -1,6 +1,7 @@
 const resizer = document.querySelector('#resizer')
 const sidebar = document.querySelector('#sidebar')
 const mainContent = document.querySelector('#main-content')
+const cardGrid = document.querySelector('#card-grid')
 
 function initResizerFn( resizer, sidebar ) 
 {
@@ -24,6 +25,12 @@ function initResizerFn( resizer, sidebar )
 
       if ( cw <= 1000 && cw >= 250 ) {
          sidebar.style.width = `${ cw }px`
+         if (sidebar.style.width >= "750px") {
+            cardGrid.classList.remove('row-cols-sm-3');
+         }
+         if (sidebar.style.width <= "750px") {
+            cardGrid.classList.add('row-cols-sm-3');
+         }
       }
    }
 

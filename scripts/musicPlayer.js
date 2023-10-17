@@ -11,6 +11,8 @@ const currentTime = document.querySelector("#current-time")
 const duration = document.querySelector("#duration")
 const progressBar = document.querySelector("#progress-bar")
 const progress = document.querySelector("#progress")
+const shuffleButton = document.querySelector("#shuffle-button-icon")
+const repeatButton = document.querySelector("#repeat-button-icon")
 
 const textButtonPlay = "<i class='bi bi-play-circle-fill'></i>"
 const textButtonPause = "<i class='bi bi-pause-circle-fill'></i>"
@@ -18,6 +20,25 @@ const textButtonPause = "<i class='bi bi-pause-circle-fill'></i>"
 prevButton.addEventListener("click", () => prevNextMusic("prev"))
 nextButton.addEventListener("click", () => prevNextMusic("next"))
 playPauseButton.addEventListener("click", () => playPauseMusic())
+
+shuffleButton.addEventListener("click", () => { 
+    //checks if the random button is active
+    if (shuffleButton.classList.contains("btn-active")) {
+        shuffleButton.classList.remove("btn-active")
+    }
+    else {
+        shuffleButton.classList.add("btn-active")
+    }
+})
+
+repeatButton.addEventListener("click", () => {
+    //checks if the repeat button is active
+    if (repeatButton.classList.contains("btn-active")){
+        repeatButton.classList.remove("btn-active")
+    } else {
+        repeatButton.classList.add("btn-active")
+    }
+ })
 
 progressBar.addEventListener("click", (e) => {    
     const newTime = (e.offsetX * player.duration) / progressBar.clientWidth
@@ -57,15 +78,26 @@ const playPauseMusic = () => {
 
 let currentSong = 0
 const prevNextMusic = (type) => {
-    if ((type  == "next" && currentSong + 1 === songs.length) || (type === "innit")) { 
-        currentSong = 0
-    } else if (type == "prev" && currentSong === 0) {
-        currentSong = songs.length - 1
-    } else { 
-        if (type === "prev")
-            currentSong--
-        else
-            currentSong++
+    if ((shuffleButton.classList.contains("btn-active")) && (repeatButton.classList.contains("btn-active")) && (type == "next")) {
+        // repeat has priority over shuffle
+        currentSong = currentSong
+    } else if (shuffleButton.classList.contains("btn-active") && (type == "next")) {
+        // deal with shuffle
+        currentSong = Math.floor(Math.random() * songs.length)
+    } else if ((repeatButton.classList.contains("btn-active")) && (type == "next")) {
+        // deal with repeat
+        currentSong = currentSong
+    } else {
+        if ((type  == "next" && currentSong + 1 === songs.length) || (type === "innit")) { 
+            currentSong = 0
+        } else if (type == "prev" && currentSong === 0) {
+            currentSong = songs.length - 1
+        } else { 
+            if (type === "prev")
+                currentSong--
+            else
+                currentSong++
+        }
     }
 
     player.src = songs[currentSong].src
