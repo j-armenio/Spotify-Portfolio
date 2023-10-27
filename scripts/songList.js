@@ -32,7 +32,6 @@ const createSongCard = () => {
 
         cardDiv.addEventListener('click', () => {
             playSong(song)
-                
         })
 
         sidebarSongsCover.appendChild(cardDiv)

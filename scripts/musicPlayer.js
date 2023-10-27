@@ -13,6 +13,7 @@ const progressBar = document.querySelector("#progress-bar")
 const progress = document.querySelector("#progress")
 const shuffleButton = document.querySelector("#shuffle-button-icon")
 const repeatButton = document.querySelector("#repeat-button-icon")
+const sidebarSongsCover = document.querySelector(".sidebar-songs-cover")
 
 const textButtonPlay = "<i class='bi bi-play-circle-fill'></i>"
 const textButtonPause = "<i class='bi bi-pause-circle-fill'></i>"
@@ -77,6 +78,8 @@ const playPauseMusic = () => {
 }
 
 let currentSong = 0
+let previousSong = null
+
 const prevNextMusic = (type) => {
     if ((shuffleButton.classList.contains("btn-active")) && (repeatButton.classList.contains("btn-active")) && (type == "next")) {
         // repeat has priority over shuffle

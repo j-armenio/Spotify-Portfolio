@@ -42,3 +42,7 @@ body, html {
     color: var(--essential-base);
     transition: 0.3s;
 }
+
+.text-active {
+    color: var(--essential-positive);
+}
