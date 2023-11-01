@@ -162,3 +162,72 @@
 #infocard:hover #infocard-button {
     opacity: 1;
 }
+
+#projectcard {
+    background-color: var(--projectcard-background);
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: background-color 0.4s;
+}
+
+@media (min-width: 576px) {
+    #projectcard {
+        padding: 1rem;
+    }
+}
+
+#projectcard:hover {
+    background-color: var(--infocard-background);
+}
+
+#projectcard-info-container {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 4.5rem;
+}
+
+@media (min-width: 576px) {
+    #projectcard-info-container {
+        height: 5rem;
+    }
+}
+
+#projectcard-title {
+    color: var(--text-base);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 576px) {
+    #projectcard-title {
+        font-size: 1rem;
+    }
+}
+
+#projectcard-text {
+    color: var(--text-subdue);
+    font-weight: 300;
+    font-size: 0.75rem;
+}
+
+@media (min-width: 576px) {
+    #projectcard-text {
+        font-size: 0.85rem;
+    }
+}
+
+#projectcard #projectcard-button {
+    opacity: 0;
+    font-size: 3rem;
+    color: var(--essential-positive);
+    transition: 0.25s;
+    z-index: 2;
+    right: 5%;
+    bottom: 0%;
+}
+
+#projectcard:hover #projectcard-button {
+    opacity: 1;
+    transform: translateY(-10%);
+    
+}
