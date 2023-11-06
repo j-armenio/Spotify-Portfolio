@@ -13,7 +13,6 @@ const progressBar = document.querySelector("#progress-bar")
 const progress = document.querySelector("#progress")
 const shuffleButton = document.querySelector("#shuffle-button-icon")
 const repeatButton = document.querySelector("#repeat-button-icon")
-const sidebarSongsCover = document.querySelector(".sidebar-songs-cover")
 
 const textButtonPlay = "<i class='bi bi-play-circle-fill'></i>"
 const textButtonPause = "<i class='bi bi-pause-circle-fill'></i>"
@@ -81,6 +80,7 @@ let currentSong = 0
 let previousSong = null
 
 const prevNextMusic = (type) => {
+    previousSong = currentSong
     if ((shuffleButton.classList.contains("btn-active")) && (repeatButton.classList.contains("btn-active")) && (type == "next")) {
         // repeat has priority over shuffle
         currentSong = currentSong
@@ -108,8 +108,10 @@ const prevNextMusic = (type) => {
     author.innerHTML = songs[currentSong].author
     songCover.src = songs[currentSong].songCover
 
-    if (type !== "innit")
+    if (type !== "innit") {
+        activateSongCard(currentSong, previousSong)
         playPauseMusic("play")
+    }
 
     updateTime()
 }
@@ -125,6 +127,7 @@ const playSong = (song) => {
     updateTime()
 
     // update currentSong variable
+    previousSong = currentSong
     for (let i = 0; i < songs.length; i++) {
         if (songs[i].src === song.src) {
             currentSong = i
@@ -133,7 +136,24 @@ const playSong = (song) => {
     }
 }
 
+const activateSongCard = (curr, prev) => {
+    const sidebarSongCards = document.querySelectorAll(".sb-card")
+    const songNameSpan = sidebarSongCards[curr].querySelector(".sb-song-name")
+    const musicBar = sidebarSongCards[curr].querySelector(".music-bars")
+    songNameSpan.classList.add("sb-card-active")
+    musicBar.classList.remove("d-none")
+
+    if (prev !== curr && prev !== null) {
+        const previousSongNameSpan = sidebarSongCards[prev].querySelector(".sb-song-name")
+        const previousMusicBar = sidebarSongCards[prev].querySelector(".music-bars")
+        previousSongNameSpan.classList.remove("sb-card-active")
+        previousMusicBar.classList.add("d-none")
+    }
+
+    
+}
+
 prevNextMusic("innit")
 player.addEventListener("timeupdate", () => updateTime())
 
-export { playSong }
+export { playSong, activateSongCard, currentSong, previousSong }

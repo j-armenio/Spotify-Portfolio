@@ -62,6 +62,10 @@
     font-size: 13px;
 }
 
+.sb-card-active {
+    color: var(--essential-positive)
+}
+
 /* styles for the bar animation */
 .music-bars {
     position: relative;
@@ -100,6 +104,7 @@
     border-radius: 3px;
     transform-origin: bottom;
     animation: bounce 2.2s ease infinite alternate;
+    animation-play-state: running;
     content: '';
 
     &:nth-of-type(2) {

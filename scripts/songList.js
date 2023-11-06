@@ -1,5 +1,5 @@
 import songs from "./songs.js"
-import { playSong } from "./musicPlayer.js"
+import { playSong, activateSongCard, currentSong, previousSong } from "./musicPlayer.js"
 
 const sidebarSongsCover = document.querySelector(".sidebar-songs-cover")
 
@@ -29,7 +29,7 @@ const createSongCard = () => {
 
         // add the animated music bars div
         const musicBarsDiv = document.createElement("div")
-        musicBarsDiv.classList.add('music-bars')
+        musicBarsDiv.classList.add('music-bars', 'd-none')
         
         // add the 3 bars span
         for (let i = 0; i < 3; i++) {
@@ -48,6 +48,7 @@ const createSongCard = () => {
 
         cardDiv.addEventListener('click', () => {
             playSong(song)
+            activateSongCard(currentSong, previousSong)
         })
 
         sidebarSongsCover.appendChild(cardDiv)
@@ -55,3 +56,4 @@ const createSongCard = () => {
 }
 
 createSongCard()
+activateSongCard(0, null)
