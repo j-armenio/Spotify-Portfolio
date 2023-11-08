@@ -66,18 +66,24 @@ const updateTime = () => {
         prevNextMusic("next")
 }
 
+let currentSong = 0
+let previousSong = null
+
 const playPauseMusic = () => {
+    const sidebarSongCards = document.querySelectorAll(".sb-card")
+    const musicBar = sidebarSongCards[currentSong].querySelector(".music-bars")
+    const musicBars = musicBar.querySelectorAll("span")
+
     if (player.paused) {
         player.play()
         playPauseButton.innerHTML = textButtonPause
+        musicBars.forEach(bar => bar.style.animationPlayState = "running");
     } else {
         player.pause()
         playPauseButton.innerHTML = textButtonPlay
+        musicBars.forEach(bar => bar.style.animationPlayState = "paused");
     }
 }
-
-let currentSong = 0
-let previousSong = null
 
 const prevNextMusic = (type) => {
     previousSong = currentSong
@@ -150,7 +156,10 @@ const activateSongCard = (curr, prev) => {
         previousMusicBar.classList.add("d-none")
     }
 
-    
+    if (prev == null) {
+        const musicBars = musicBar.querySelectorAll("span")
+        musicBars.forEach(bar => bar.style.animationPlayState = "paused");
+    }
 }
 
 prevNextMusic("innit")

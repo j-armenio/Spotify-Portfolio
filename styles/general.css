@@ -19,7 +19,8 @@
     --profile-container-background-mobile: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     --infocard-background: rgba(200, 200, 200, 0.1);
     --infocard-hover: rgba(223, 223, 223, 0.2);
-    --projectcard-background: #181818
+    --projectcard-background: #181818;
+    --scrollbar-hover: ;
 }
 
 *, .row, .padding {
@@ -46,4 +47,26 @@ body, html {
 
 .text-active {
     color: var(--essential-positive);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.7rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: #121212;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--essential-subdue);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--essential-base);
 }
