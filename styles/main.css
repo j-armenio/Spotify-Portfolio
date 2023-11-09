@@ -13,6 +13,7 @@
 #main-content {
     background: var(--gradient-background);
     background-attachment: local;
+    transition: background 1s ease;
 }
 
 #main-header {
@@ -20,6 +21,7 @@
     left: 0;
     width: 100%;
     background: var(--gradient-background);
+    transition: background 1s ease;
 }
 
 #header-img-container {
@@ -162,6 +164,8 @@
 #infocard:hover #infocard-button {
     opacity: 1;
 }
+
+#info-1:hover 
 
 #projectcard {
     background-color: var(--projectcard-background);
