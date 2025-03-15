@@ -1,2 +1,2 @@
-# Spotify-Portfolio
-Criando uma página personalizada com minhas informações com base no site do Spotify.
+# SpotifyPortfolio
+Página web baseada no site do Spotify para Desktop com descrições para currículo e portfolio.
